@@ -15,20 +15,20 @@ public class ObsAppApplication {
     private BookService bookService;
 
     public static void main(String[] args) {
-        SpringApplication.run( ObsAppApplication.class, args );
+        SpringApplication.run(ObsAppApplication.class, args);
     }
 
     @Bean
     public CommandLineRunner commandLineRunner() {
         return args -> {
             Book book = new Book();
-            book.setTitle( "bbb" );
-            book.setAuthor( "aaaa" );
-            book.setIsbn( "asdfg" );
-            book.setPrice( BigDecimal.valueOf( 1029 ) );
-            book.setDescription( "qwertyuiop" );
-            book.setCoverImage( "sdsd" );
-            bookService.save( book );
+            book.setTitle("bbb");
+            book.setAuthor("aaaa");
+            book.setIsbn("asdfg");
+            book.setPrice(BigDecimal.valueOf(1029));
+            book.setDescription("qwertyuiop");
+            book.setCoverImage("sdsd");
+            bookService.save(book);
         };
     }
 }

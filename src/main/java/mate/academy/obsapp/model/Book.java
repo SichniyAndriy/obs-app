@@ -13,20 +13,20 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @Entity
-@Table( name = "books" )
+@Table(name = "books")
 public class Book {
     @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
 
     private String author;
 
-    @Column( nullable = false, unique = true )
+    @Column(nullable = false, unique = true)
     private String isbn;
 
-    @Column( nullable = false )
+    @Column(nullable = false)
     private BigDecimal price;
 
     private String description;
