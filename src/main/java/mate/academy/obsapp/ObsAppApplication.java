@@ -29,6 +29,7 @@ public class ObsAppApplication {
             book.setDescription("qwertyuiop");
             book.setCoverImage("sdsd");
             bookService.save(book);
+            System.out.println(bookService.findAll());
         };
     }
 }
